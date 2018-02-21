@@ -20,6 +20,7 @@ build_script:
   - cmake -DCMAKE_PREFIX_PATH=c:\projects\libpcap\Win32\WpdPack -G"Visual Studio 12 2013" ..
   - msbuild -nologo -p:Configuration=Release tcpdump.sln
   - cd
+  - Release\tcpdump.exe --version
   - Release\tcpdump.exe -D
   - Release\tcpdump.exe -J
-  - Release\tcpdump.exe --version
+  
